@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" href="./examCSS.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>JSExam</title>
+</head>
+<body>
+<div align="center">
+<h2 style="text-align:center;">Form</h2>
+<form class="exam-form" name="demo">
+
+ 
+
+<label for="name">Name: </label>
+<input id="name" type="text"   placeholder="Enter Name"><br><br>
+
+
+<label for="age">Age: </label>
+<input type="number" id="age" name="age" placeholder="Enter Age"><br><br>
+
+  
+  <label for="gender">Gender: </label>
+    <label class="radio-inline">
+      <input type="radio" id="gender" name="option" value="Male" >Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" id="gender" name="option" value="Female">Female
+    </label>
+    <label class="radio-inline">
+      <input type="radio" id="gender" name="option" Value="Other">Other
+    </label><br><br>
+ 
+ 
+
+
+<label for="cities">Choose a city:</label>
+
+<select name="cities" id="cities">
+  <option value="Dhaka">Dhaka</option>
+  <option value="Chittagong">Chittagong</option>
+  <option value="Rangpur">Rangpur</option>
+  <option value="Rajshahi">Rajshahi</option>
+
+</select><br><br>
+<button type="submit" onclick="validate()" ></i>Save</button>
+
+</form>
+<div>
+<div class="currentValue"></div>
+</body>
+<script type="text/javascript" src="./examjs.js"></script>
+</html>
